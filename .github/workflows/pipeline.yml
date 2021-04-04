@@ -72,7 +72,8 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
-      - name: npm install, and test
+          env: host=api.dev.local,port=5000
+      - name: npm install, and e2e test
         run: |
           npm install
           npm run start-prod
