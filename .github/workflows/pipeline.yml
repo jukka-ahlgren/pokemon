@@ -75,8 +75,7 @@ jobs:
       - name: npm install, and test
         run: |
           npm install
-          start: npm run start-prod
-          wait-on: http://localhost:5000
+          npm run start-prod
           npm run test:e2e
         env:
           CI: true
