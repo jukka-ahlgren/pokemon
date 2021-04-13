@@ -1,4 +1,3 @@
-
 ## on dev version
 
 name: Create and publish a package
@@ -72,7 +71,7 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
-          env: host=api.dev.local,port=5000
+          env: host=api.dev.local,port=500ne0
       - name: npm install, and e2e test
         run: |
           npm install
