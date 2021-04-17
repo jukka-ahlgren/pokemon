@@ -33,9 +33,9 @@ jobs:
         with:
           name: webpack artifacts
           path: public
-      - name: npm install, and test
+      - name: npm install, and lint
         run: |
           npm install
-          npm eslint
+          npm run eslint
         env:
           CI: true
